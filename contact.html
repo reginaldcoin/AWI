@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Asia Wellbeing Institute</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .has-bg-img { 
+            background: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1-1dp8TzhkPJ2rSTuQD7DyWVw3xRjNqd.png') center center; 
+            background-size:cover;
+        }
+        .hero.is-dark {
+            background-color: rgba(26, 58, 42, 0.8);
+        }
+        .hero.is-dark .navbar-item:hover {
+            background-color: rgba(74, 222, 128, 0.1) !important;
+        }
+        .section.contact {
+            background-color: #234433;
+            color: white;
+        }
+        .box {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+        }
+        .contact-info {
+            color: #ffffff;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+                <strong>Asia Wellbeing Institute</strong>
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item" href="index.html">Home</a>
+                <a class="navbar-item" href="programs.html">Programs</a>
+                <a class="navbar-item" href="about.html">About</a>
+                <a class="navbar-item" href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero is-dark">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title is-1">Contact Us</h1>
+                <p class="subtitle">Get in touch with Asia Wellbeing Institute</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section contact">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-6">
+                    <h2 class="title is-2 has-text-white">Get in Touch</h2>
+                    <p class="mb-4">To contact us, please click the button below to send us an email:</p>
+                    <a href="mailto:reg@asiawellbeinginstitute.com?subject=Contact%20from%20Website&body=Name:%0D%0AEmail:%0D%0ASubject:%0D%0AMessage:" class="button is-primary is-large">
+                        <span class="icon">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <span>Send us an Email</span>
+                    </a>
+                </div>
+                <div class="column is-6">
+                    <h2 class="title is-2 has-text-white">Contact Information</h2>
+                    <div class="box contact-info">
+                        <p><strong>Address:</strong> 123 Wellbeing Street, Singapore 123456</p>
+                        <p><strong>Phone:</strong> +65 6123 4567</p>
+                        <p><strong>Email:</strong> <a href="mailto:reg@asiawellbeinginstitute.com" class="has-text-primary-light">reg@asiawellbeinginstitute.com</a></p>
+                    </div>
+                    <h2 class="title is-2 has-text-white mt-6">Connect With Us</h2>
+                    <div class="buttons are-medium">
+                        <a href="#" class="button is-primary"><span class="icon"><i class="fab fa-facebook"></i></span></a>
+                        <a href="#" class="button is-primary"><span class="icon"><i class="fab fa-twitter"></i></span></a>
+                        <a href="#" class="button is-primary"><span class="icon"><i class="fab fa-linkedin"></i></span></a>
+                        <a href="#" class="button is-primary"><span class="icon"><i class="fab fa-instagram"></i></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer has-background-dark has-text-white">
+        <div class="content has-text-centered">
+            <p>
+                &copy; 2023 Asia Wellbeing Institute. All rights reserved.
+            </p>
+            <p>
+                <a href="privacy-policy.html" class="has-text-primary">Privacy Policy</a> |
+                <a href="terms-of-service.html" class="has-text-primary">Terms of Service</a> |
+                <a href="contact.html" class="has-text-primary">Contact Us</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            if ($navbarBurgers.length > 0) {
+                $navbarBurgers.forEach( el => {
+                    el.addEventListener('click', () => {
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>

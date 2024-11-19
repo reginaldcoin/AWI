@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Asia Wellbeing Institute</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero.is-dark {
+            background-color: rgba(26, 58, 42, 0.8);
+        }
+        .hero.is-dark .navbar-item:hover {
+            background-color: rgba(74, 222, 128, 0.1) !important;
+        }
+        .section.policy {
+            background-color: #234433;
+            color: white;
+        }
+        .content h2, .content h3 {
+            color: #4ADE80;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+                <strong>Asia Wellbeing Institute</strong>
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item" href="index.html">Home</a>
+                <a class="navbar-item" href="programs.html">Programs</a>
+                <a class="navbar-item" href="about.html">About</a>
+                <a class="navbar-item" href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero is-dark">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title is-1">Privacy Policy</h1>
+                <p class="subtitle">How we protect and use your information</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section policy">
+        <div class="container">
+            <div class="content">
+                <h2>1. Introduction</h2>
+                <p>At Asia Wellbeing Institute, we are committed to protecting your privacy and ensuring the confidentiality of your personal information. This Privacy Policy outlines how we collect, use, disclose, and safeguard your data when you use our website or participate in our programs.</p>
+
+                <h2>2. Information We Collect</h2>
+                <p>We may collect the following types of information:</p>
+                <ul>
+                    <li>Personal identification information (Name, email address, phone number, etc.)</li>
+                    <li>Professional information (Occupation, qualifications, etc.)</li>
+                    <li>Payment information</li>
+                    <li>Website usage data</li>
+                </ul>
+
+                <h2>3. How We Use Your Information</h2>
+                <p>We use the collected information for various purposes, including:</p>
+                <ul>
+                    <li>Providing and improving our services</li>
+                    <li>Communicating with you about our programs and updates</li>
+                    <li>Processing payments and enrollments</li>
+                    <li>Analyzing website usage to enhance user experience</li>
+                </ul>
+
+                <h2>4. Data Protection</h2>
+                <p>We implement a variety of security measures to maintain the safety of your personal information. However, no method of transmission over the Internet or electronic storage is 100% secure, and we cannot guarantee absolute security.</p>
+
+                <h2>5. Disclosure of Your Information</h2>
+                <p>We do not sell, trade, or rent your personal identification information to others. We may share generic aggregated demographic information not linked to any personal identification information regarding visitors and users with our business partners and trusted affiliates.</p>
+
+                <h2>6. Your Rights</h2>
+                <p>You have the right to access, update, or delete your personal information. If you wish to exercise these rights, please contact us using the information provided at the end of this policy.</p>
+
+                <h2>7. Changes to This Privacy Policy</h2>
+                <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "last updated" date at the bottom of this page.</p>
+
+                <h2>8. Contact Us</h2>
+                <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+                <p>
+                    Asia Wellbeing Institute<br>
+                    123 Wellbeing Street, Singapore 123456<br>
+                    Email: privacy@asiawellbeinginstitute.com<br>
+                    Phone: +65 6123 4567
+                </p>
+
+                <p>Last updated: May 15, 2023</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer has-background-dark has-text-white">
+        <div class="content has-text-centered">
+            <p>
+                &copy; 2023 Asia Wellbeing Institute. All rights reserved.
+            </p>
+            <p>
+                <a href="privacy-policy.html" class="has-text-primary">Privacy Policy</a> |
+                <a href="terms-of-service.html" class="has-text-primary">Terms of Service</a> |
+                <a href="contact.html" class="has-text-primary">Contact Us</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            if ($navbarBurgers.length > 0) {
+                $navbarBurgers.forEach( el => {
+                    el.addEventListener('click', () => {
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Asia Wellbeing Institute</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero.is-dark {
+            background-color: rgba(26, 58, 42, 0.8);
+        }
+        .hero.is-dark .navbar-item:hover {
+            background-color: rgba(74, 222, 128, 0.1) !important;
+        }
+        .section.about {
+            background-color: #234433;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+                <strong>Asia Wellbeing Institute</strong>
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item" href="index.html">Home</a>
+                <a class="navbar-item" href="programs.html">Programs</a>
+                <a class="navbar-item" href="about.html">About</a>
+                <a class="navbar-item" href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero is-dark">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title is-1">About Us</h1>
+                <p class="subtitle">Empowering mental health practitioners across Asia</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section about">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8">
+                    <h2 class="title is-2 has-text-white">Our Mission</h2>
+                    <p class="is-size-5 mb-5">
+                        At Asia Wellbeing Institute, we are dedicated to enhancing mental health care across Asia by providing comprehensive, culturally-sensitive training programs for mental health practitioners. Our goal is to bridge the gap between Western psychological practices and Asian cultural contexts, empowering professionals to deliver effective, compassionate care.
+                    </p>
+                    <h2 class="title is-2 has-text-white">Our Vision</h2>
+                    <p class="is-size-5 mb-5">
+                        We envision a future where mental health care in Asia is accessible, culturally appropriate, and of the highest quality. By nurturing a community of skilled practitioners, we aim to contribute to the overall wellbeing of individuals and communities across the diverse landscape of Asia.
+                    </p>
+                    <h2 class="title is-2 has-text-white">Our Values</h2>
+                    <ul class="is-size-5">
+                        <li>Cultural Sensitivity</li>
+                        <li>Evidence-Based Practice</li>
+                        <li>Continuous Learning</li>
+                        <li>Collaboration</li>
+                        <li>Ethical Practice</li>
+                    </ul>
+                </div>
+                <div class="column is-4">
+                    <figure class="image is-3by4">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/2-yhd9WShmc5spRkvDrQwzXosjMmEnNK.png" alt="Mental health professionals collaborating">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer has-background-dark has-text-white">
+        <div class="content has-text-centered">
+            <p>
+                &copy; 2023 Asia Wellbeing Institute. All rights reserved.
+            </p>
+            <p>
+                <a href="#" class="has-text-primary">Privacy Policy</a> |
+                <a href="#" class="has-text-primary">Terms of Service</a> |
+                <a href="#" class="has-text-primary">Contact Us</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            if ($navbarBurgers.length > 0) {
+                $navbarBurgers.forEach( el => {
+                    el.addEventListener('click', () => {
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Asia Wellbeing Institute</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero.is-dark {
+            background-color: rgba(26, 58, 42, 0.8);
+        }
+        .hero.is-dark .navbar-item:hover {
+            background-color: rgba(74, 222, 128, 0.1) !important;
+        }
+        .section.terms {
+            background-color: #234433;
+            color: white;
+        }
+        .content h2, .content h3 {
+            color: #4ADE80;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+                <strong>Asia Wellbeing Institute</strong>
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item" href="index.html">Home</a>
+                <a class="navbar-item" href="programs.html">Programs</a>
+                <a class="navbar-item" href="about.html">About</a>
+                <a class="navbar-item" href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero is-dark">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title is-1">Terms of Service</h1>
+                <p class="subtitle">Please read these terms carefully before using our services</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section terms">
+        <div class="container">
+            <div class="content">
+                <h2>1. Acceptance of Terms</h2>
+                <p>By accessing or using the Asia Wellbeing Institute website and services, you agree to be bound by these Terms of Service. If you do not agree to all the terms and conditions, you must not use our services.</p>
+
+                <h2>2. Description of Services</h2>
+                <p>Asia Wellbeing Institute provides training programs and resources for mental health practitioners across Asia. Our services include online courses, workshops, and educational materials.</p>
+
+                <h2>3. User Accounts</h2>
+                <p>To access certain features of our website, you may be required to create an account. You are responsible for maintaining the confidentiality of your account information and for all activities that occur under your account.</p>
+
+                <h2>4. Intellectual Property</h2>
+                <p>All content on this website, including text, graphics, logos, and images, is the property of Asia Wellbeing Institute and is protected by copyright laws. You may not use, reproduce, or distribute any content from this website without our express written permission.</p>
+
+                <h2>5. User Conduct</h2>
+                <p>You agree to use our services only for lawful purposes and in a way that does not infringe upon or restrict others' use and enjoyment of the website. Prohibited activities include but are not limited to:</p>
+                <ul>
+                    <li>Violating any applicable laws or regulations</li>
+                    <li>Impersonating any person or entity</li>
+                    <li>Interfering with the proper functioning of the website</li>
+                    <li>Engaging in any form of automated data collection without our prior consent</li>
+                </ul>
+
+                <h2>6. Payment and Refunds</h2>
+                <p>Payment for our programs is due at the time of registration. We offer refunds for course cancellations made at least 14 days before the start date of the program. No refunds will be issued for cancellations made less than 14 days before the start date.</p>
+
+                <h2>7. Limitation of Liability</h2>
+                <p>Asia Wellbeing Institute shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of or inability to use our services.</p>
+
+                <h2>8. Modifications to Terms</h2>
+                <p>We reserve the right to modify these Terms of Service at any time. We will notify users of any significant changes by posting a notice on our website. Your continued use of our services after such modifications constitutes your acceptance of the updated terms.</p>
+
+                <h2>9. Governing Law</h2>
+                <p>These Terms of Service shall be governed by and construed in accordance with the laws of Singapore, without regard to its conflict of law provisions.</p>
+
+                <h2>10. Contact Information</h2>
+                <p>If you have any questions about these Terms of Service, please contact us at:</p>
+                <p>
+                    Asia Wellbeing Institute<br>
+                    123 Wellbeing Street, Singapore 123456<br>
+                    Email: legal@asiawellbeinginstitute.com<br>
+                    Phone: +65 6123 4567
+                </p>
+
+                <p>Last updated: May 15, 2023</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer has-background-dark has-text-white">
+        <div class="content has-text-centered">
+            <p>
+                &copy; 2023 Asia Wellbeing Institute. All rights reserved.
+            </p>
+            <p>
+                <a href="privacy-policy.html" class="has-text-primary">Privacy Policy</a> |
+                <a href="terms-of-service.html" class="has-text-primary">Terms of Service</a> |
+                <a href="contact.html" class="has-text-primary">Contact Us</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            if ($navbarBurgers.length > 0) {
+                $navbarBurgers.forEach( el => {
+                    el.addEventListener('click', () => {
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>

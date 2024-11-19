@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asia Wellbeing Institute</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .has-bg-img { 
+            background: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1-1dp8TzhkPJ2rSTuQD7DyWVw3xRjNqd.png') center center; 
+            background-size:cover;
+        }
+        .hero.is-dark {
+            background-color: rgba(26, 58, 42, 0.8);
+        }
+        .hero.is-dark .navbar-item:hover {
+            background-color: rgba(74, 222, 128, 0.1) !important;
+        }
+        .section.features {
+            background-color: #234433;
+        }
+        .card {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .card-content {
+            flex-grow: 1;
+        }
+        .cta-section {
+            background: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/2-yhd9WShmc5spRkvDrQwzXosjMmEnNK.png') center center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+                <strong>Asia Wellbeing Institute</strong>
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item" href="index.html">Home</a>
+                <a class="navbar-item" href="programs.html">Programs</a>
+                <a class="navbar-item" href="about.html">About</a>
+                <a class="navbar-item" href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero is-fullheight has-bg-img">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title is-1 has-text-white">
+                    Empowering Mental Health Practitioners Across Asia
+                </h1>
+                <p class="subtitle is-4 has-text-white mb-6">
+                    Join our comprehensive training programs to enhance your skills and make a lasting impact in mental health care.
+                </p>
+                <a href="#programs" class="button is-primary is-large">Explore Our Programs</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="section features">
+        <div class="container">
+            <h2 class="title is-2 has-text-centered has-text-white mb-6">Why Choose Asia Wellbeing Institute?</h2>
+            <div class="columns">
+                <div class="column">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="has-text-centered mb-4">
+                                <span class="icon is-large has-text-primary">
+                                    <i class="fas fa-globe fa-3x"></i>
+                                </span>
+                            </div>
+                            <h3 class="title is-4">Regional Expertise</h3>
+                            <p>Tailored training that addresses the unique mental health challenges and cultural contexts across diverse Asian communities.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="has-text-centered mb-4">
+                                <span class="icon is-large has-text-primary">
+                                    <i class="fas fa-users fa-3x"></i>
+                                </span>
+                            </div>
+                            <h3 class="title is-4">Expert Instructors</h3>
+                            <p>Learn from experienced professionals at the forefront of mental health practices in Asia and beyond.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="has-text-centered mb-4">
+                                <span class="icon is-large has-text-primary">
+                                    <i class="fas fa-check-circle fa-3x"></i>
+                                </span>
+                            </div>
+                            <h3 class="title is-4">Comprehensive Curriculum</h3>
+                            <p>Cutting-edge techniques and evidence-based approaches to mental health care, tailored for Asian contexts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta" class="section cta-section">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-half has-text-centered">
+                    <h2 class="title is-2 has-text-white">Ready to Elevate Your Mental Health Practice?</h2>
+                    <p class="subtitle is-4 has-text-white mb-6">
+                        Join our next training program and be part of a growing network of skilled mental health practitioners across Asia.
+                    </p>
+                    <a href="#contact" class="button is-primary is-large">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer has-background-dark has-text-white">
+        <div class="content has-text-centered">
+            <p>
+                &copy; 2023 Asia Wellbeing Institute. All rights reserved.
+            </p>
+            <p>
+                <a href="privacy-policy.html" class="has-text-primary">Privacy Policy</a> |
+                <a href="terms-of-service.html" class="has-text-primary">Terms of Service</a> |
+                <a href="contact.html" class="has-text-primary">Contact Us</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            if ($navbarBurgers.length > 0) {
+                $navbarBurgers.forEach( el => {
+                    el.addEventListener('click', () => {
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
