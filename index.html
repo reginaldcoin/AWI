@@ -36,22 +36,24 @@
 </head>
 <body>
     <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="#">
-                <strong>Asia Wellbeing Institute</strong>
-            </a>
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div class="navbar-menu">
-            <div class="navbar-end">
-                <a class="navbar-item" href="index.html">Home</a>
-                <a class="navbar-item" href="programs.html">Programs</a>
-                <a class="navbar-item" href="about.html">About</a>
-                <a class="navbar-item" href="contact.html">Contact</a>
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <strong>Asia Wellbeing Institute</strong>
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="index.html">Home</a>
+                    <a class="navbar-item" href="programs.html">Programs</a>
+                    <a class="navbar-item" href="about.html">About</a>
+                    <a class="navbar-item" href="contact.html">Contact</a>
+                </div>
             </div>
         </div>
     </nav>
@@ -65,7 +67,7 @@
                 <p class="subtitle is-4 has-text-white mb-6">
                     Join our comprehensive training programs to enhance your skills and make a lasting impact in mental health care.
                 </p>
-                <a href="#programs" class="button is-primary is-large">Explore Our Programs</a>
+                <a href="programs.html" class="button is-primary is-large">Explore Our Programs</a>
             </div>
         </div>
     </section>
@@ -125,7 +127,7 @@
                     <p class="subtitle is-4 has-text-white mb-6">
                         Join our next training program and be part of a growing network of skilled mental health practitioners across Asia.
                     </p>
-                    <a href="#contact" class="button is-primary is-large">Apply Now</a>
+                    <a href="contact.html" class="button is-primary is-large">Book Now</a>
                 </div>
             </div>
         </div>
@@ -134,7 +136,7 @@
     <footer class="footer has-background-dark has-text-white">
         <div class="content has-text-centered">
             <p>
-                &copy; 2023 Asia Wellbeing Institute. All rights reserved.
+                &copy; 2024 Asia Wellbeing Institute Ltd. All rights reserved.
             </p>
             <p>
                 <a href="privacy-policy.html" class="has-text-primary">Privacy Policy</a> |
@@ -146,12 +148,19 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            // Get all "navbar-burger" elements
             const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Check if there are any navbar burgers
             if ($navbarBurgers.length > 0) {
+                // Add a click event on each of them
                 $navbarBurgers.forEach( el => {
                     el.addEventListener('click', () => {
+                        // Get the target from the "data-target" attribute
                         const target = el.dataset.target;
                         const $target = document.getElementById(target);
+
+                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
                         el.classList.toggle('is-active');
                         $target.classList.toggle('is-active');
                     });

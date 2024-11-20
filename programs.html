@@ -28,22 +28,24 @@
 </head>
 <body>
     <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="index.html">
-                <strong>Asia Wellbeing Institute</strong>
-            </a>
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div class="navbar-menu">
-            <div class="navbar-end">
-                <a class="navbar-item" href="index.html">Home</a>
-                <a class="navbar-item" href="programs.html">Programs</a>
-                <a class="navbar-item" href="about.html">About</a>
-                <a class="navbar-item" href="contact.html">Contact</a>
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <strong>Asia Wellbeing Institute</strong>
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="index.html">Home</a>
+                    <a class="navbar-item" href="programs.html">Programs</a>
+                    <a class="navbar-item" href="about.html">About</a>
+                    <a class="navbar-item" href="contact.html">Contact</a>
+                </div>
             </div>
         </div>
     </nav>
@@ -63,48 +65,42 @@
                 <div class="column is-4">
                     <div class="card">
                         <div class="card-content">
-                            <h3 class="title is-4">Cognitive Behavioral Therapy in Asian Contexts</h3>
-                            <p>Learn how to adapt CBT techniques for diverse Asian cultures and belief systems.</p>
+                            <h3 class="title is-4">Introduction to Drawing and Talking</h3>
+                            <p>Join our 75-minute interactive Zoom conversation to learn how the Drawing and Talking therapeutic technique supports the mental health of children, young people, and adults in thousands of schools, charities, and organizations.</p>
                             <ul class="mt-4">
-                                <li>Duration: 12 weeks</li>
-                                <li>Format: Online with live sessions</li>
-                                <li>Certification: Provided upon completion</li>
+                                <li><strong>Date:</strong> November 26th, 7:30PM - 8:45PM (Hong Kong Time)</li>
                             </ul>
                         </div>
-                        <footer class="card-footer">
-                            <a href="#" class="card-footer-item button is-primary">Learn More</a>
+                        <footer class="card-footer" style="justify-content: center; display: flex;">
+                            <a href="https://us06web.zoom.us/meeting/register/tZ0pd--rqTsvGdaAbX0j5Bhp4by2AabLMq4G" class="button is-primary">Register Here</a>
                         </footer>
                     </div>
                 </div>
                 <div class="column is-4">
                     <div class="card">
                         <div class="card-content">
-                            <h3 class="title is-4">Mindfulness and Eastern Philosophies in Therapy</h3>
-                            <p>Integrate traditional Eastern practices with modern psychotherapy techniques.</p>
+                            <h3 class="title is-4">Introduction to Drawing and Talking</h3>
+                            <p>Join our 75-minute interactive Zoom conversation to learn how the Drawing and Talking therapeutic technique supports the mental health of children, young people, and adults in thousands of schools, charities, and organizations.</p>
                             <ul class="mt-4">
-                                <li>Duration: 8 weeks</li>
-                                <li>Format: Blended (online & in-person retreats)</li>
-                                <li>Certification: Provided upon completion</li>
+                                <li><strong>Date:</strong> January 8th, 7:30PM - 8:45PM (Hong Kong Time)</li>
                             </ul>
                         </div>
-                        <footer class="card-footer">
-                            <a href="#" class="card-footer-item button is-primary">Learn More</a>
+                        <footer class="card-footer" style="justify-content: center; display: flex;">
+                            <a href="https://us06web.zoom.us/meeting/register/tZ0ldOyupj8tHtF7k1Qd2loE_mbxibX_dXQA" class="button is-primary">Register Here</a>
                         </footer>
                     </div>
                 </div>
                 <div class="column is-4">
                     <div class="card">
                         <div class="card-content">
-                            <h3 class="title is-4">Trauma-Informed Care for Asian Communities</h3>
-                            <p>Develop skills to address trauma within the unique contexts of Asian societies.</p>
+                            <h3 class="title is-4">Introduction to Drawing and Talking</h3>
+                            <p>Join our 75-minute interactive Zoom conversation to learn how the Drawing and Talking therapeutic technique supports the mental health of children, young people, and adults in thousands of schools, charities, and organizations.</p>
                             <ul class="mt-4">
-                                <li>Duration: 16 weeks</li>
-                                <li>Format: Online with supervised practicum</li>
-                                <li>Certification: Provided upon completion</li>
+                                <li><strong>Date:</strong> January 27th, 7:30PM - 8:45PM (Hong Kong Time)</li>
                             </ul>
                         </div>
-                        <footer class="card-footer">
-                            <a href="#" class="card-footer-item button is-primary">Learn More</a>
+                        <footer class="card-footer" style="justify-content: center; display: flex;">
+                            <a href="https://us06web.zoom.us/meeting/register/tZYodemgqDsqGNWGE_CxaNSHr-3uWWeS_STI" class="button is-primary">Register Here</a>
                         </footer>
                     </div>
                 </div>
@@ -115,7 +111,7 @@
     <footer class="footer has-background-dark has-text-white">
         <div class="content has-text-centered">
             <p>
-                &copy; 2023 Asia Wellbeing Institute. All rights reserved.
+                &copy; 2024 Asia Wellbeing Institute Ltd. All rights reserved.
             </p>
             <p>
                 <a href="#" class="has-text-primary">Privacy Policy</a> |
@@ -127,12 +123,19 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            // Get all "navbar-burger" elements
             const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Check if there are any navbar burgers
             if ($navbarBurgers.length > 0) {
+                // Add a click event on each of them
                 $navbarBurgers.forEach( el => {
                     el.addEventListener('click', () => {
+                        // Get the target from the "data-target" attribute
                         const target = el.dataset.target;
                         const $target = document.getElementById(target);
+
+                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
                         el.classList.toggle('is-active');
                         $target.classList.toggle('is-active');
                     });

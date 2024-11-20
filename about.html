@@ -21,22 +21,24 @@
 </head>
 <body>
     <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="index.html">
-                <strong>Asia Wellbeing Institute</strong>
-            </a>
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div class="navbar-menu">
-            <div class="navbar-end">
-                <a class="navbar-item" href="index.html">Home</a>
-                <a class="navbar-item" href="programs.html">Programs</a>
-                <a class="navbar-item" href="about.html">About</a>
-                <a class="navbar-item" href="contact.html">Contact</a>
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <strong>Asia Wellbeing Institute</strong>
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="index.html">Home</a>
+                    <a class="navbar-item" href="programs.html">Programs</a>
+                    <a class="navbar-item" href="about.html">About</a>
+                    <a class="navbar-item" href="contact.html">Contact</a>
+                </div>
             </div>
         </div>
     </nav>
@@ -49,27 +51,30 @@
             </div>
         </div>
     </section>
-
     <section class="section about">
         <div class="container">
             <div class="columns">
                 <div class="column is-8">
                     <h2 class="title is-2 has-text-white">Our Mission</h2>
                     <p class="is-size-5 mb-5">
-                        At Asia Wellbeing Institute, we are dedicated to enhancing mental health care across Asia by providing comprehensive, culturally-sensitive training programs for mental health practitioners. Our goal is to bridge the gap between Western psychological practices and Asian cultural contexts, empowering professionals to deliver effective, compassionate care.
+                        At Asia Wellbeing Institute (AWI), we are committed to empowering individuals across Asia to heal and build resilience through accessible, affordable, and innovative health programs. Our mission is to enhance and advance wellness for all people in the region by providing high-quality training and support to mental health professionals.
                     </p>
                     <h2 class="title is-2 has-text-white">Our Vision</h2>
                     <p class="is-size-5 mb-5">
-                        We envision a future where mental health care in Asia is accessible, culturally appropriate, and of the highest quality. By nurturing a community of skilled practitioners, we aim to contribute to the overall wellbeing of individuals and communities across the diverse landscape of Asia.
+                        We envision a future where mental health care across Asia is accessible, culturally appropriate, and of the highest quality. By nurturing a community of skilled practitioners and offering a range of specialized training programs, we aim to contribute to the overall wellbeing of individuals and communities throughout the diverse landscape of Asia.
                     </p>
                     <h2 class="title is-2 has-text-white">Our Values</h2>
                     <ul class="is-size-5">
+                        <li>Empowerment</li>
+                        <li>Innovation</li>
+                        <li>Collaboration</li>
                         <li>Cultural Sensitivity</li>
                         <li>Evidence-Based Practice</li>
-                        <li>Continuous Learning</li>
-                        <li>Collaboration</li>
-                        <li>Ethical Practice</li>
-                    </ul>
+                    </ul><br>
+                    <h2 class="title is-2 has-text-white">Key Services</h2>
+                    <p class="is-size-5 mb-5">
+                        AWI plans to offer a range of specialized training programs including Drawing & Talking Therapy, Suicide Awareness, Dialectical Behavior Therapy, and ongoing consultation and supervision for practitioners. We will also conduct public workshops and customized corporate wellness programs to enhance employee wellbeing.
+                    </p>
                 </div>
                 <div class="column is-4">
                     <figure class="image is-3by4">
@@ -83,7 +88,7 @@
     <footer class="footer has-background-dark has-text-white">
         <div class="content has-text-centered">
             <p>
-                &copy; 2023 Asia Wellbeing Institute. All rights reserved.
+                &copy; 2024 Asia Wellbeing Institute Ltd. All rights reserved.
             </p>
             <p>
                 <a href="#" class="has-text-primary">Privacy Policy</a> |
@@ -94,13 +99,20 @@
     </footer>
 
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
+            document.addEventListener('DOMContentLoaded', () => {
+            // Get all "navbar-burger" elements
             const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Check if there are any navbar burgers
             if ($navbarBurgers.length > 0) {
+                // Add a click event on each of them
                 $navbarBurgers.forEach( el => {
                     el.addEventListener('click', () => {
+                        // Get the target from the "data-target" attribute
                         const target = el.dataset.target;
                         const $target = document.getElementById(target);
+
+                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
                         el.classList.toggle('is-active');
                         $target.classList.toggle('is-active');
                     });
